@@ -7,12 +7,11 @@ def display_board(board)
 end
 
 board = ["", "", "", "", "", "", "", "", ""]
-def move(board, position, value="X")
-
-  board = [0, "X", 4, "O", 8, "X"]
-
+def move(board, position, value = "X")
+  board[position.to_i - 1] = value
 end
-move()
+
+
 
 
 
