@@ -7,3 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def move(board, position, default = "X")
+  board[position - 1] = default 
+end
