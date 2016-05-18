@@ -7,11 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
-def move(board, position, token)
-  puts "Where would you like to go?"
-  position = gets.strip
-  board[position.to_i] = token
+def move(board, input, token = "X")
+  board[input.to_i - 1] = token
 end
 
-token = "X"
-board = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   "]
