@@ -12,7 +12,7 @@ puts "Welcome to Tic Tac Toe!" 
 end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " " ]
 
-puts "Where would you like to go?"
+puts "Where would you like to go? (1-9)"
 def input_to_index(user_input)
 user_input.to_i - 1
 end
@@ -21,23 +21,10 @@ gets.strip(input)
 
 #input_to_index
 
-def move
-end
-
-def move(array, index, value)
-end
-
-def move(array, index, value="X")
-end
-
-def move(array, index, value="X")
-  array[index] = value
-end
 
 board = ["", "", ""]
 def update_array_at_with(array, index, value)
   array[index] = value
 end
 
-update_array_at_with(board, 0, "Red")
- ruby bin/move
+update_array_at_with(board, 0, "X")
