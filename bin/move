@@ -1,8 +1,17 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-
 # Code your CLI Here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " " ]
 
 puts "Welcome to Tic Tac Toe!" 
+
+puts "Welcome to Tic Tac Toe!" 
+
+puts "Where would you like to go? (1-9)"
+
+gets.strip(input)
+
+#input_to_index
+
+update_array_at_with(board, 0, "X")
