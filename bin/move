@@ -10,9 +10,3 @@ index = input_to_index(input)
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 move(board, index, user_char="X")
 display_board(board)
-
-
-
-
-
-
