@@ -3,3 +3,31 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Welcome to Tic Tac Toe!"
+
+
+#until game is Over - tie or win
+display_board(board)
+#success = false
+
+#until success == true
+#until user successfully places token
+puts "Where would you like to go?"
+input = gets.strip
+index = input_to_index(input)
+move(board, index)
+display_board(board)
+#convert the input to index
+#check to see if position is free (' ')
+#if so
+  #move(board, index, token)
+  #success = true
+#if not
+  #display some message
+#end if
+
+#end inner loop
+#change the token
+#success = false
+#end loop
