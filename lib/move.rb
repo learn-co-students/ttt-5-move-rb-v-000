@@ -11,5 +11,5 @@ def input_to_index(input)
 end
 input=input_to_index(input)
 def move(array,input,value="X")
-  array[input.to_i-1]=value
+  array[input]=value
 end
