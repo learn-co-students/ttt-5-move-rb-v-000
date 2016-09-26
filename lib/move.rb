@@ -7,11 +7,15 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  puts "user_input".to_i
-    end
+user_input.to_i
+end
 
-def move (board, index)
-  user_input - 1
+def move (board, index, character = "X")
+  def update_array_at_with(array, index, value)
+    array[index] = value
+  end
+
+  update_array_at_with(board, 0, "character")
 end
 
 
