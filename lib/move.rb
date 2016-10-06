@@ -8,8 +8,8 @@ end
 
 def input_to_index(user_input)
    user_input.to_i - 1
- end
+end
 
- def move(cell, pos, char="X")
-   cell[pos] = char
- end
+def move(board, pos, char="X")
+    board[pos] = char
+end
