@@ -9,5 +9,4 @@ input = gets.strip
 
 input_to_index(input)
 
-move(input_to_index)
 # Code your CLI Here
