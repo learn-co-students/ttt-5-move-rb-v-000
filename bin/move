@@ -2,4 +2,21 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+
+puts "Where would you like to go?"
+
+input = gets.strip
+index = input_to_index(input)
+
+move(board, index)
+display_board(board)
+
+
+
+
+#Now we want to convert the user's input to an array index using our
+#input_to_index method and store this as the variable index.
