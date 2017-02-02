@@ -12,10 +12,6 @@ def input_to_index(input)
   index = input - 1
 end
 
-def move(array, index, value)
+def move(array, index, value = "X")
   array[index] = value
-end
-
-def greeting(name)
-  puts "Hi, #{name}! Welcome to Tic Tac Toe!"
 end
