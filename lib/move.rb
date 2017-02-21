@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def display_board(board)
 
