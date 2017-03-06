@@ -7,3 +7,14 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+
+def input_to_index(input)
+# convert input to integer and subtract 1.
+  index=input.to_i - 1
+  # users count from 1, Ruby from 0
+end
+
+def move(board, index, token="X")
+  board[index] = token
+  board
+end
