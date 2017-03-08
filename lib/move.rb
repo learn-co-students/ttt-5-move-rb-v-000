@@ -8,10 +8,9 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(input)
-  input = gets.chomp
   input.to_i - 1
 end
 
-def move(array, index, character = "X")
-  
+def move(board, index, character = "X")
+  board[index] = character
 end
