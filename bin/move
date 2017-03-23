@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
-
+#main loop for tic tac toe move program
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Welcome to Tic Tac Toe!"
+display_board(["1","2","3","4","5","6","7","8","9"])
+puts "Make your move (1-9):"
+current_move = gets.strip
+move(board,input_to_index(current_move))
+display_board(board)
