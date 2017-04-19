@@ -6,13 +6,13 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input) # defines input_to_index method
-index = user_input.to_i - 1 # converts user_input to integer
+def input_to_index(user_input) # Defines input_to_index method
+index = user_input.to_i - 1 # Converts user_input to integer
 #puts "#{index}" # Test to see if formula worked
 #index = user_input - 1 # test code
   end
 
-def move(array, index, value = "X") # defines move method accepting 3 arguments (1 default)
+def move(array, index, value = "X") # Defines move method accepting 3 arguments (1 default)
   array[index] = value
   end
 
