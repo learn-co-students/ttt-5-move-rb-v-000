@@ -7,6 +7,5 @@ board = [" "," "," "," "," "," "," "," "," "]
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 user_input = gets.strip
-def input_to_index(user_input)
-  user_input = user_input.to_i - 1
-end
+input_to_index(user_input)
+move(board, user_input,"")
