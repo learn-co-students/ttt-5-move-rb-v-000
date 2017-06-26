@@ -8,7 +8,7 @@ end
 def input_to_index(user_input)
   user_input = user_input.to_i - 1
 end
-def move(array, index, value = "X")
-  board = ["","   ","   ","   ","   ","   ","   ","   ","   "]
+def move(board, index, value = "X")
+  board[index] = value
 end
 # code your input_to_index and move method here!
