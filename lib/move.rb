@@ -8,4 +8,7 @@ end
 
 def input_to_index(user_input)
   user_input=[1,2,3,4,5,6,7,8,9]
-end# code your input_to_index and move method here!
+end
+def move(board, input_to_index, value)
+  puts "X" or "O"
+end # code your input_to_index and move method here!
