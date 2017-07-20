@@ -7,8 +7,15 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  user_input=[1,2,3,4,5,6,7,8,9]
+  integer = user_input.to_i
+  index = integer - 1
 end
-def move(board, input_to_index, value)
-  puts "X" or "O"
-end # code your input_to_index and move method here!
+def move(board, input_to_index, value="X")
+  puts board
+  update_array_at_with(board, input_to_index, value)
+end
+
+def update_array_at_with(board, index, value="X")
+  board[index] = value
+  return board
+end
