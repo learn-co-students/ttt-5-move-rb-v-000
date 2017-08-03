@@ -11,7 +11,7 @@ describe '#input_to_index' do
   it 'subtracts 1 from the user_input' do
     user_input = "6"
 
-    expect(input_to_index(user_input)).to be(5)
+    expect(input_to_index(user_input)).to be(5.to_i)
   end
 
   it 'returns -1 for strings without integers' do
