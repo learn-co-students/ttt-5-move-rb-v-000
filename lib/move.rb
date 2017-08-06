@@ -8,5 +8,9 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(user_input)
-  string.to_i; 
+  user_input.to_i - 1
+end
+
+def move(board, position, current_player = "X")
+  board[position] = current_player;
 end
