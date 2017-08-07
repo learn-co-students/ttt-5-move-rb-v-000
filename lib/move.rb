@@ -5,9 +5,14 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-def input_to_index(user_input)
-  user_input.to_i - 1
+
+puts "Where would you like to go?"
+
+def input_to_index(input)
+  input.to_i - 1
 end
-def move(board, index, current_player = "X")
-  board[index] = current_player
+index = ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+
+def move(board, index, default_player = "X")
+  board[index] = default_player
 end
