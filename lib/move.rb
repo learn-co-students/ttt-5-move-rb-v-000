@@ -6,4 +6,20 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
+def input_to_index(str)
+  if str =~ /\d/         # Calling String's =~ method.
+    index = Integer(str) - 1
+  else
+    index = - 1
+  end
+ return index
+end
+
+
+#  and move method here!
+def move(board,index,char="X")
+  
+  board[index]=char
+
+ return board
+end
