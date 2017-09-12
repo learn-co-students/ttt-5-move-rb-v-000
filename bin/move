@@ -3,3 +3,7 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+greeting
+input = gets.strip
+move(board, input_to_index(input))
