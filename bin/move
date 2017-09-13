@@ -1,6 +1,12 @@
+#!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
 board = Array.new(9, " ")
-puts"Welcome to Tic Tac Toe!"
-gets
-# Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to move?"
+input = gets.chomp #"1"
+index = input_to_index(input) # 0
+
+move(board, index)
+
+display_board(board)
