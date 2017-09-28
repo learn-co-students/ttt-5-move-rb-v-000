@@ -7,3 +7,13 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+#learn spec/01_input_to_index_spec.rb
+def input_to_index(user_input)
+  user_input = "#{user_input}".to_i - 1
+end
+
+#learn spec/02_move_spec.rb
+def move(board, position, char = "X")
+  index = position
+  board[index] = char
+end
