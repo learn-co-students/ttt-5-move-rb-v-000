@@ -2,4 +2,18 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+  user_input = gets.strip
+  index = input_to_index(user_input)
+  move(board, index)
+  display_board(board)
+
+  #move(board, index, char)
+  #Failure/Error: expect(self).to receive(:move).with(anything, 0, any_args),
+  #"Make sure `bin/move` is passing the index, not the input to the `#move` method."
+  # Failure/Error: board = get_variable_from_file("./bin/move", "board")
+     #NameError:
+      # undefined local variable or method `index' for #<RSpec::ExampleGroups::BinMoveExecutingACLIA
+  #pplication:0x000000028b6008>
