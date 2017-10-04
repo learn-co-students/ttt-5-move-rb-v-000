@@ -13,65 +13,8 @@ puts "Where would you like to go? (1-9)"
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-input = gets.strip
-input_to_index(input)
-move(board, input, "X")
-display_board (board)
-
-puts "Where would you like to go?"
 
 input = gets.strip
-input_to_index(input)
-move(board, input, "O")
+index = input_to_index(input)
+move(board, index)
 display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "X")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "O")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "X")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "O")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "X")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "O")
-display_board (board)
-
-puts "Where would you like to go?"
-
-input = gets.strip
-input_to_index(input)
-move(board, input, "X")
-display_board (board)
-
-puts "The game is over."
