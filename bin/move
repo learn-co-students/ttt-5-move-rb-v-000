@@ -5,7 +5,9 @@ require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 board = [" "," "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
-
-input = gets.strip
-#this defines a variable "index" by calling the method "input_to_index" and then using the input as an argument. 
-index = input_to_index(input)
+#this "gets" the number the player inputs into the command line as their move.
+user_input = gets.strip
+#this defines a variable "index" by calling the method #input_to_index and then using the input as an argument.
+index = input_to_index(user_input)
+move(board, 0)
+display_board(board)
