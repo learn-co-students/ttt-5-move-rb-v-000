@@ -5,19 +5,15 @@ require_relative '../lib/move.rb'
 # Code your CLI Here
 puts "Welcome to Tic Tac Toe!"
 
-# below is how I tried making the array to circumvent the test. Couldnt trick it.
-=begin
 def make_board
   board = []
   for i in 0..8
-    board[i] = ""
+    board[i] = " "
   end
   board
 end
 board = make_board
-=end
 
-board = [" "," "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
 input = gets.strip
 index = input_to_index(input)
