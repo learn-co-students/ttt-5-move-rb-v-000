@@ -1,33 +1,15 @@
 
 require_relative "../lib/move.rb"
-#require_relative "./spec_helper.rb"
 
-
-
-
-
-# Commented out 2 test cases jst couldnt figure them out which are as follow
-#F1.Failure/Error: board = get_variable_from_file("./bin/move", "board")
-#     NoMethodError:
-#       undefined method `[]' for nil:NilClass
-# ./lib/move.rb:4:in `display_board'
-# ./spec/spec_helper.rb:26:in `get_variable_from_file'
-# ./spec/spec_helper.rb:13:in `eval'
-# ./spec/spec_helper.rb:13:in `get_variable_from_file'
-# ./spec/03_cli_spec.rb:11:in `block (2 levels) in <top (required)>'
-
-# 2.Failure/Error: run_file("./bin/move")
-#     NoMethodError:
-#       undefined method `[]' for nil:NilClass
 describe './bin/move executing a CLI Application' do
   it 'defines a board variable' do
     allow($stdout).to receive(:puts)
     allow(self).to receive(:gets).and_return("1")
     allow(self).to receive(:move)
 
-  #  board = get_variable_from_file("./bin/move", "board")
+    board = get_variable_from_file("./bin/move", "board")
 
-  #  expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
   end
 
   it 'prints "Welcome to Tic Tac Toe!"' do
@@ -62,9 +44,9 @@ describe './bin/move executing a CLI Application' do
     allow($stdout).to receive(:puts)
 
     allow(self).to receive(:gets).and_return('1')
-#    expect(self).to receive(:move).with(anything, 0, any_args), "Make sure `bin/move` is passing the index, not the input to the `#move` method."
+    expect(self).to receive(:move).with(anything, 0, any_args), "Make sure `bin/move` is passing the index, not the input to the `#move` method."
 
-#    run_file("./bin/move")
+    run_file("./bin/move")
   end
 
   it 'move modifies the board correctly' do
