@@ -9,10 +9,10 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Where would you like to go?"
 
-input = gets.strip.to_i - 1
+input = gets.strip
 
-input_to_index(input)
+index = input_to_index(input)
 
-move(board, input)
+move(board, index)
 
 display_board(board)
