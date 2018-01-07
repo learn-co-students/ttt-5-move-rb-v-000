@@ -8,13 +8,12 @@ end
 
 # # code your input_to_index and move method here!
 def input_to_index(user_input)
-  puts "Welcome to Tic Tac Toe!"
-  puts "Where would you like to go?"
-  puts "#{user_input}"
-  #1.upto(9) { |n| print n, ".."} this passes, so does user_input = 5
+  #method should take the user's input ("1"-"9") and convert it to the index of the board array (0-8)
+  user_input.to_i-1
 
 end
 
-def move(board)
-puts "#{board[]}"
+def move(board, position, char="X")
+  #need a method that represents a user moving into a position, like the middle cell, in Tic Tac Toe
+board[position] = char
 end
