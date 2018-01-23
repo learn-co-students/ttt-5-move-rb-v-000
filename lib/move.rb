@@ -10,5 +10,8 @@ def input_to_index(user_input)
 	value = user_input.to_i - 1
 end
 
-def move(array, index, token = "X")
+def move(board, index, token = "X")
+  board[index] = token
 end 
+
+
