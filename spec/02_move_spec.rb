@@ -1,36 +1,36 @@
 require_relative "../lib/move.rb"
 
-describe './lib/move.rb' do
+puts describe './lib/move.rb' do
   it 'defines a move method' do
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     expect(defined?(move)).to be_truthy
   end
 
-  context '#move' do
+  puts context '#move' do
     it 'accepts 3 arguments: the board, the position a player wants to fill and their char, X or O' do
       expect{move}.to raise_error(ArgumentError)
     end
 
-    it 'provides a default value for the 3rd argument' do
+    puts it 'provides a default value for the 3rd argument' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       expect {move(board, 2)}.to_not raise_error
     end
 
-    it 'allows "X" player in the top left position' do
+    puts it 'allows "X" player in the top left position' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 0, "X")
 
       expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
     end
 
-    it 'allows "O" player in the middle' do
+    puts it 'allows "O" player in the middle' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 4, "O")
 
       expect(board).to eq([" ", " ", " ", " ", "O", " ", " ", " ", " "])
     end
 
-    it 'allows "X" player in the bottom right' do
+    puts it 'allows "X" player in the bottom right' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 8)
 
@@ -64,7 +64,7 @@ describe './lib/move.rb' do
       move(board, 5, "O")
       move(board, 6, "X")
       move(board, 7, "X")
-      move(board, 8, "O")      
+      move(board, 8, "O")
 
       expect(board).to eq(["X", "O", "X", "O", "X", "O", "X", "X", "O"])
     end
