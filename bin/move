@@ -11,18 +11,19 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 #3 Now, ask the user for input by outputting "Where would you like to go?"
 #to the terminal.
 puts "Where woud you like to go?"
-
+puts "Please enter 1-9:"
 #4 We need to store the user's input. Use gets.strip to store
 #their input to a variable, input.
 input = gets.strip
 #4 Now we want to convert the user's input to an array index using our
 #input_to_index method and store this as the variable index.
-input_to_index(input)
+index = input_to_index(input)
 
 #5 Now we're ready to call our #move method.
 #Do so with the arguments of the board, the index the user wants to access
 #and the default player of "X".
-move(board, 0, "X")
+#move(board, 0, "X")
+move(board, index)
 #6 Lastly, display the board by calling the #display_board method,
 #passing in the necessary arguments required to run this method.
 display_board(board)
