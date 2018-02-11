@@ -8,6 +8,11 @@ end
 
 # code your input_to_index and move method here!
 
-def move(board, position, playerChar = "X")
-  board[position.to_i-1] = playerChar
+
+def input_to_index(input)
+  [position.to_i-1] = playerChar
+end
+
+def move(board, index, playerChar="X")
+  board[index]=playerChar
 end
