@@ -2,4 +2,26 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+# eCofresi CLI Code
+
+puts "Welcome to Tic Tac Toe!"
+
+# Initializes Tic Tac Toe Board to spaces
+   board = [" ", " ", " "," ", " ", " "," ", " ", " "]
+   
+# Obtain User Input for Desired move
+  
+    puts "Where would you like to go?"
+    input = gets.strip
+
+# Call method to change input string to integer for array index
+
+    index = input_to_index(input)
+
+# Call method to move user's input to correct spot on Board 
+  
+    move(board, index, character='X')
+
+# Call method to show modified board
+
+    display_board(board)
