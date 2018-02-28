@@ -1,3 +1,5 @@
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,3 +9,13 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(input)
+  index = input.to_i - 1
+end
+
+
+def move(board,input_to_index, character = "X")
+  board[input_to_index] = character
+end
+
+#need to start with an empty board then update that board.
