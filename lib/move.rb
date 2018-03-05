@@ -14,6 +14,6 @@ end
 def move(board, index, value = "X")
   board[index] = value
   end
+
   
-  #how is update_array_at_with used? is it called board now per my code?
-#how is the players input for a move a string when they input the number at the CLI?
+  
