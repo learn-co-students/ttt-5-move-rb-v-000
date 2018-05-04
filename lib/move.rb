@@ -11,8 +11,8 @@ def input_to_index(input)
   input.to_i-1
 end
 
-def move(board,position,character= "X")
-  binding.pry
-  index=input_to_index(position)
-  board[index]=character
+def move(board,position,character="X")
+  #binding.pry
+  #index=input_to_index(position)
+  board[position]=character
 end
