@@ -3,3 +3,22 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+puts "Welcome to Tic Tac Toe!"
+board = ([" " , " ", " ", " ", " ", " ", " ", " ", " "])
+puts "Where would you like to go?"
+input = gets.strip
+
+#This is where we reference the method we made in the lib file
+
+index = input_to_index(input)
+
+#Calls the move method
+move(board, index, "X")
+
+#Calls the display board
+display_board(board)
+
+
+
+#Way to go! We coded how to move in Tic Tac Toe!!!
