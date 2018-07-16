@@ -3,3 +3,27 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+
+#establishes blank board array
+def board=[" "," "," "," "," "," "," "," "," ",]
+end
+
+#take input from user, strips off excess
+def input = gets.strip
+end
+
+#Calls #move with established values and a default value of X
+def move(board,input,value="X")
+end
+
+#takes input from user, converts it into an integer from a string,
+def display_board(board)
+end
+
+#and puts it into the board array with the assigned value.
+def move(board,input,value="X")
+  board[input.to_i - 1] = value
+end
