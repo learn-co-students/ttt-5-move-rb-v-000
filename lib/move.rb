@@ -8,7 +8,7 @@ end
 
 # code your input_to_index and move method here!
 def move(board,input,value="X")
-  board[input.to_i - 1] = value
+  board[input.to_i] = value
 end
 #takes input from user, converts it into an integer from a string,
 #and puts it into the board array with the assigned value.
