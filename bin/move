@@ -12,26 +12,22 @@ board = [" "," "," "," "," "," "," "," "," ",]
 
 puts "Welcome to Tic Tac Toe!"
 
-def display_board(board)
-end
+display_board(board)
 
 # asks user for input
 puts "Where would you like to go?"
 input = gets.strip
 index = input_to_index(input)
 
-def input_to_index(string)
-  string.to_i - 1
-end
+input_to_index(string)
+puts  string.to_i - 1
 
-def move(board, index, user_marker = "X")
+move(board, index, user_marker = "X")
   board[index.to_i] = user_marker
   return board
-end
 
 new_board = move(board, 0, "X")
 display_board(new_board)
 
-def display_board(new_board)
+ display_board(new_board)
   puts " x |   |   "
-end
