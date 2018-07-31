@@ -1,8 +1,8 @@
 
-# An empty board variable
+# An empty (global?) board variable
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-# How the board should look with the board variable
+# How the board should look with the board variable tossed in
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -18,5 +18,8 @@ end
 
 # I have no clue what I'm doing here...
 def move(board, converted_input, character = "X")
-board[converted_input] = character
+  board[converted_input] = character
 end
+
+#Have no idea what to do now..
+display_board()
