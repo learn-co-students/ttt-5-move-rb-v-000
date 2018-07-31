@@ -1,3 +1,8 @@
+
+# An empty board variable
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+# How the board should look with the board variable
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,14 +11,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-
-
-def input_to_index
-  converted_input = input_to_index(user_input)
+# Grabs a user's desired play & make it a usable value for the game code
+def input_to_index(user_input)
+  converted_input = user_input.to_i - 1
 end
 
-
-
-def move
-
+# I have no clue what I'm doing here...
+def move(board, converted_input, character = "X")
+board[converted_input] = character
 end
