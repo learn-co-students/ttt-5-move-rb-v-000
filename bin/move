@@ -1,18 +1,20 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
+#Blank board variable
 
 #Greeting to user
 puts "Welcome to Tic Tac Toe!"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 #Blank board for viewing pleasure
+
 puts display_board(board)
+
 #Prompt for the user, then grabs & strips down their response
 puts "Where would you like to go?"
-user_input = gets.strip
 
+input = gets.strip
+index = input_to_index(input)
 # Yeah, I have no clue..
-index = input_to_index(user_input)
-
-move(board[converted_input], index, character)
-
-display_board(board.move)
+move(board, index, token)

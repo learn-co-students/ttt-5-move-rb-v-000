@@ -1,8 +1,5 @@
 
-# An empty (global?) board variable
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-# How the board should look with the board variable tossed in
+# How the board should look with the board variable (in bin file) tossed in
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -12,14 +9,11 @@ def display_board(board)
 end
 
 # Grabs a user's desired play & make it a usable value for the game code
-def input_to_index(user_input)
-  converted_input = user_input.to_i - 1
+def input_to_index(input)
+  index = input.to_i - 1
 end
 
-# I have no clue what I'm doing here...
-def move(board, converted_input, character = "X")
-  board[converted_input] = character
+# Assign a character to the user's desired game space on the board
+def move(board, index, token = "X")
+  board[index] = token
 end
-
-#Have no idea what to do now..
-display_board()
