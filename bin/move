@@ -11,4 +11,4 @@ puts "Where would you like to go?" # ask user for move
 user_input = gets.strip # get user input and store in variable
 index = input_to_index(user_input) # change input(string) into integer and corresponding index
 new_board = move(board, index, "X") # log move
-display_board(new_board) # display board
+display_board(board) # display board
