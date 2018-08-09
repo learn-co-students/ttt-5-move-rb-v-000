@@ -11,8 +11,8 @@ end
 
 # code your input_to_index and move method here!
  
-def move(board, converted_user_input)
-  board[converted_user_input] 
+def move(board, converted_user_input, token = "X" )
+  board[converted_user_input] = token
 end
 def input_to_index(user_input)
   converted_user_input = user_input.to_i - 1
