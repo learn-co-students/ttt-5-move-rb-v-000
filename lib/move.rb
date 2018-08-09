@@ -11,7 +11,7 @@ end
 
 # code your input_to_index and move method here!
  
-def move( board, converted_user_input)
+def move(board, converted_user_input)
   board[converted_user_input] 
 end
 def input_to_index(user_input)
