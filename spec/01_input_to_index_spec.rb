@@ -9,7 +9,7 @@ describe '#input_to_index' do
     expect(converted_input).to be_a(Integer)
   end
 
-  it 'subtracts 1 from the user_input' do
+  it 'subtracts 1 from the input' do
     user_input = "6"
     converted_input = input_to_index(user_input)
 
@@ -22,5 +22,11 @@ describe '#input_to_index' do
     
     expect(converted_input).to be(-1)
   end
-
+ 
+  it 'converts string to its integer value' do
+    user_input.to_i
+    converted_input = input_to_index(user_input)
+    
+    expected(converted input). to be(5 + 1)
+  end
 end
