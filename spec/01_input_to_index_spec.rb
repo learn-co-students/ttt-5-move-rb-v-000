@@ -24,9 +24,9 @@ describe '#input_to_index' do
   end
  
   it 'converts string to its integer value' do
-    user_input.to_i
+    user_input = "7"
     converted_input = input_to_index(user_input)
     
-    expected(converted input). to be(5 + 1)
+    expect(converted_input). to be(5 + 1)
   end
 end
