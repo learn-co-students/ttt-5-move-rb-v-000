@@ -7,4 +7,3 @@ require_relative '../lib/move.rb'
   def input_to_index(user_input)
     user_input.to_i - 1
   end
-end
