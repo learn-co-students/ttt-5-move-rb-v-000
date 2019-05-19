@@ -1,5 +1,16 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-
+puts "Welcome to Tic Tac Toe!"
 # Code your CLI Here
+#Since it's an array I can close with []
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Where would you like to go?"
+#Store the users input by setting = to gets.strip
+input = gets.strip
+#Convert user input to an array index and store as variable index
+index = input_to_index(input)
+#Call the move method with arguments board and index
+move(board,index)
+#Display board and pass argument board to run
+display_board(board)
