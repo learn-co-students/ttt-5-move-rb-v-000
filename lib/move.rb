@@ -4,6 +4,10 @@ def display_board(board)
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
+ end 
+def input_to_index(number)
+  number.to_i - 1
 end
-
-# code your input_to_index and move method here!
+def move(board, index, player = "X")
+  board[index] = player
+end
