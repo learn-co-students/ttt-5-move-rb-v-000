@@ -18,29 +18,29 @@ describe './lib/move.rb' do
 
     it 'allows "X" player in the top left position' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 0, "X")
+      board = move(board, 0, "X")
 
       expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
     end
 
     it 'allows "O" player in the middle' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 4, "O")
+      board = move(board, 4, "O")
 
       expect(board).to eq([" ", " ", " ", " ", "O", " ", " ", " ", " "])
     end
 
     it 'allows "X" player in the bottom right' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 8)
+      board = move(board, 8)
 
       expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", "X"])
     end
 
     it 'allows "X" player in the bottom right and "O" in the top left ' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 0, "O")
-      move(board, 8, "X")
+      board = move(board, 0, "O")
+      board = move(board, 8, "X")
 
       expect(board).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
     end
@@ -64,7 +64,7 @@ describe './lib/move.rb' do
       move(board, 5, "O")
       move(board, 6, "X")
       move(board, 7, "X")
-      move(board, 8, "O")      
+      move(board, 8, "O")
 
       expect(board).to eq(["X", "O", "X", "O", "X", "O", "X", "X", "O"])
     end
