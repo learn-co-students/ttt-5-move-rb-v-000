@@ -16,6 +16,3 @@ def move(board,position,player="X")
   board[position]=player
 end
 # code your input_to_index and move method here!
-
-puts "Welcome to Tic Tack Toe!"
-puts "Where would you like to go?"
