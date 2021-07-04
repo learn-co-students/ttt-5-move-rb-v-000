@@ -1,5 +1,26 @@
 #!/usr/bin/env ruby
 
+# Shebang line -- what other file should we hold hands with
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+#Blank board variable
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+#Greeting to user
+puts "Welcome to Tic Tac Toe!"
+
+#Blank board for viewing pleasure
+puts display_board(board)
+
+#Prompt for the user, then grabs & strips down their response
+puts "Where would you like to go?"
+input = gets.strip
+
+# Take the user's usable response and turn it into usable board data
+index = input_to_index(input)
+
+# Take the user's prettied up response & shove it into the board at the right spot
+move(board, index)
+
+# Show the user how their response effected the board
+display_board(board)
