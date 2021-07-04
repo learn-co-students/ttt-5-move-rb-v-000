@@ -7,3 +7,13 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+puts "Welcome to Tic Tac Toe!"
+
+def input_to_index(input)
+  move = input.to_i
+  move -1
+end
+
+def move(board, index, value = "X")
+  board[index] = value
+end
