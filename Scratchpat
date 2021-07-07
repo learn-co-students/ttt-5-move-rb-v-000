@@ -1,0 +1,9 @@
+move(board, index, "O")
+move(board, index, "X")
+move(board, index, "O")
+move(board, index, "X")
+move(board, index, "O")
+move(board, index, "X")
+move(board, index, "0")
+move(board, index, "X")      
+
